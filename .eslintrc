@@ -1,0 +1,26 @@
+{
+  "plugins": ["prettier", "editorconfig"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "no-negated-in-lhs": "off",
+    "no-unused-vars": "off",
+    "prettier/prettier": "error",
+    "no-labels": "off",
+    "prefer-arrow-callback": "error"
+  },
+  "env": {
+    "amd": true,
+    "node": true,
+    "jquery": true,
+    "es6": true
+  }
+}
