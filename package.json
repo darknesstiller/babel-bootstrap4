@@ -6,8 +6,13 @@
       "scripts": {
             "dev": "webpack-dev-server",
             "build": "webpack",
-            "lint":"eslint 'src/**' && echo 'eslint sin errores'",
-            "prepush": "npm run lint"
+            "lint": "eslint 'src/**' && echo 'eslint sin errores'"
+      },
+      "husky": {
+            "hooks": {
+                  "pre-commit": "npm run lint",
+                  "pre-push": "npm run lint"
+            }
       },
       "keywords": [],
       "author": "tone4hook",
@@ -22,6 +27,7 @@
             "eslint-plugin-editorconfig": "0.0.3",
             "eslint-plugin-prettier": "^3.0.0",
             "extract-text-webpack-plugin": "^3.0.2",
+            "husky": "^1.1.4",
             "node-sass": "^4.10.0",
             "prettier": "^1.15.2",
             "sass-loader": "^7.1.0",
