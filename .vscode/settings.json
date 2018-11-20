@@ -5,7 +5,9 @@
   "prettier.eslintIntegration": true,
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
-  "files.exclude": {
-    "**/.git": false,
-  },
+  "prettier.useTabs": true,
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": true
 }
